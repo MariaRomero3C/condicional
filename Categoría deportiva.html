@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Categoría deportiva</title>
+</head>
+<body>
+    <style>
+        .ben{
+            color: black;
+            background-color: lightsteelblue;
+        }
+        .alv{
+            background-color:lightgreen;
+        }
+        .inf{
+            background-color:lightcoral;
+        }
+        .cad{
+            background-color: lightgray;
+        }
+    </style>
+    <script>
+        function LeerEdad(){
+            var edad = document.getElementById("edad").value;
+            if (edad<=7){
+               // alert("Benjamín")
+               document.getElementById("mensaje").innerHTML = "<h1 class='ben'>Benjamín</h1>";  
+            }else{
+            if(edad<=9){
+                //alert("Alevín")
+                document.getElementById("mensaje").innerHTML = "<h1 class='alv'>Alevín</h1>";
+            }else{
+            if(edad<=11){
+                //alert("Infaltil")
+                document.getElementById("mensaje").innerHTML = "<h1 class='inf'>Infantil</h1>";
+            }else{
+                //alert ("Cadete")
+                document.getElementById("mensaje").innerHTML = "<h1 class='cad'>Cadete</h1>";
+                }
+                }
+                }
+                }
+
+    </script>
+    Edad:<input type="text" id="edad"><br><br>
+    <input type="button" value="Categoria deportiva" onclick="LeerEdad()">
+    <div id="mensaje"></div>
+</body>
+</html>
