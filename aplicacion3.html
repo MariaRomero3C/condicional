@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplicación 3</title>
+</head>
+<body>
+    <style>
+        input{
+            background-color: lightgoldenrodyellow;
+            font-size:30px
+        }
+        body{
+            background-color:rgb(245, 196, 203);
+            font-size:30px;
+            font-family:Arial, Helvetica, sans-serif
+        }
+    .uno{
+       background-color: rgb(201, 126, 201); 
+    }
+    .dos{
+        background-color: lightsalmon;
+    }
+    .tres{
+        background-color: lightcoral;
+    }
+    </style>
+    <script>
+        function mayor(){
+            var edad1 = document.getElementById("edad1").value;
+            var edad2 = document.getElementById("edad2").value;
+            if(edad1>edad2){
+                //alert("Tú eres mayor")
+                document.getElementById("mensaje").innerHTML = "<h2 class='uno'>Tú eres mayor</h1>";
+            }else{
+            if(edad1<edad2){
+                //alert("Tu amigo es mayor")
+                document.getElementById("mensaje").innerHTML = "<h2 class='dos'>Tu amigo es mayor</h1>";
+            }else{
+                //alert("Teneis la misma edad")
+                document.getElementById("mensaje").innerHTML = "<h2 class='tres'>Teneis la misma edad</h1>";
+            }
+            
+        }
+    }
+
+    </script>
+    Introduce tu edad:<input type="text" id="edad1"><br><br>
+    Introduce la edad de tu amigo:<input type="text" id="edad2"><br><br>
+    <input type="button" value="¿Quién es mayor?" onclick="mayor()">
+    <div id="mensaje"></div>
+</body>
+</html>
