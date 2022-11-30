@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>   
+    <title>Aplicación 4</title>
+</head>
+    <style>
+        #capa1{
+        left:30px; 
+            top:50px;
+         background-color:Coral;
+        }
+        
+        #capa2{
+          background-color:purple;
+        }
+        .caja{
+         width:200px; height:200px;
+        }
+    </style>
+
+<script>
+    function Dice(mensaje){
+        alert(mensaje);
+    }
+
+</script>
+<body>
+    <div id="contenedor">
+        <div onclick="Dice('Soy Coral');" id="capa1" class="caja">C</div>
+        <div onclick="Dice('Soy Morado')" id="capa2" class="caja">M</div>
+                      
+    </div>
+</body>
+</html>
