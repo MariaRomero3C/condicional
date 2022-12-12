@@ -12,6 +12,12 @@
     </script>
 </head>
 <body>
+    <style>
+        body{
+            background-color: lemonchiffon;
+            font-size: 30px;
+        }
+    </style>
     <div id="mensaje"></div>
 <img src="rueda de los alimentos.jpg" alt="Rueda de los alimentos" />
     <script>
@@ -25,14 +31,11 @@
 
         if(ods_select>=0 && ods_select<=6){
               document.getElementById("mensaje").innerHTML += "<h1>Hola " + nombre + "</h1>";
-                document.getElementById("mensaje").innerHTML += "Has elegido el grupo <b>" + lista_ods[ods_select] + "</mark>";
+                document.getElementById("mensaje").innerHTML += "Has elegido el grupo <b>" + lista_ods[ods_select] + "</b>";
         }else{
             document.getElementById("mensaje").innerHTML += "<h1>Hola " + nombre + "</h1>";
-            document.getElementById("mensaje").innerHTML += "<p>Solo puedes elegir un número entre el 1 y el 6</p>";
+            document.getElementById("mensaje").innerHTML += "<p> Solo puedes elegir un número entre el 1 y el 6</p>";
         }
-        
-
-
     </script>
 
 </body>
